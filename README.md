@@ -178,6 +178,9 @@ This script is optimized for **Windows environments**, ensuring:
 ## **GET STARTED**
 Run the script and organize your files efficiently.
 
+Contact
+Author: jm@cloudware.host
+
 ```bash
 python organize_files.py
 ```
