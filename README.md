@@ -18,21 +18,21 @@ A Python script to rename, reorganize, and categorize your script and document l
 ## **WORKFLOW DIAGRAM**
 ```mermaid
 graph TD;
-    A[■ Start Script] --> B{● User Selects Mode}
-    B -->|● Full Reorganization| C[■ Scan All Files Recursively]
-    B -->|● Dry-Run Mode| C
-    B -->|● Rollback| G[■ Restore Files from Undo Log]
+    A[Start Script] --> B{User Selects Mode}
+    B -->|Full Reorganization| C[Scan All Files Recursively]
+    B -->|Dry-Run Mode| C
+    B -->|Rollback| G[Restore Files from Undo Log]
 
-    C --> D[■ Detect Misnamed Scripts]
-    D -->|● Rename if Needed| E[■ Extract Keywords for Categorization]
-    D -->|● Already Named Correctly| E
+    C --> D[Detect Misnamed Scripts]
+    D -->|Rename if Needed| E[Extract Keywords for Categorization]
+    D -->|Already Named Correctly| E
 
-    E --> F[■ Move Files to Categorized Folders]
-    F --> H[■ Handle Non-Text Files (Move to Special Folder)]
+    E --> F[Move Files to Categorized Folders]
+    F --> H[Process Non-Text Files]
     
-    H --> I[■ Save Log & Undo Information]
-    I --> J[■ Display Progress & Completion]
-    J --> K[■ Done]
+    H --> I[Save Log and Undo Information]
+    I --> J[Display Progress and Completion]
+    J --> K[Done]
 
     G --> K
 ```
